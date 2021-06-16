@@ -1,0 +1,48 @@
+<!DOCTYPE html> <!--сообщение браузеру о том как стоит обрабатывать эту страницу-->
+<html lang="ru"> <!--указываем язык содержимого-->
+	<head>
+		<title>Регистрация</title>
+		<link rel="stylesheet" href="css/reg.css">
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/> <!--кодировка страницы-->
+	</head>
+
+	<body>
+		<form action="6_lab.php" method="POST">
+		<div class="regist">Регистрация</div>
+
+		<p class="email">
+			Адрес электронной почты<br>
+			<input type="email" required="required" placeholder="guap@mail.ru">
+		</p>
+
+  		<p class="pass">
+  			Пароль<br>
+  			<input type="password" name="password" required="required">
+  		</p>
+  		<p class="name">
+			Имя<br>
+			<input type="text" name="name" required="required">
+		</p>
+		<p class="surname">
+			Фамилия<br>
+			<input type="text" name="surname" required="required">
+		</p>
+		<p class="born">
+			Дата Рождения<br>
+			<input type="date" id="start" name="trip-start"
+       min="01-01-1950" max="01-01-2003">
+		</p>
+       	<p class="phone">
+       		Телефон<br>
+       		<input type="tel" required="required" pattern="+7(911)XXX-XXX" placeholder="+7(911)XXX-XХ-XX"></td>
+       	</p>  
+   		<div>
+   			<button class="but" type="submit">
+   				Отправить
+   			</button>
+   		</div>
+   		</form>
+
+	</body>
+</html>
+
